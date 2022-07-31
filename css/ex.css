@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-logo{
+    padding: 15px;
+    color: rgba(235, 235, 109, 0.877);
+    text-decoration: none;
+}
+.link-logo:hover{
+    border-bottom: rgba(240, 240, 127, 0.849) solid 3px;
+}
+.logo2{
+    margin-left: 15px;
+}
+h2{
+    color: rgb(240, 234, 147);
+}
+.containers{
+    width: 100%;
+    /* height: 100vh; */
+    text-align: center;
+    margin-top: 20px;
+}
+.head{
+    color: white;
+    padding: 15px;
+    border-bottom: rgb(247, 247, 149) solid 3px;
+    width: fit-content;
+    margin: auto;
+}
+.boxs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+.boxs-1{
+    width: 300px;
+    background-color: #222; 
+    margin: 20px;
+    padding: 10px;
+    transition: 0.7s;
+    animation-name: abood;
+    animation-duration: 1.3s;
+    animation-delay: 0.5s;
+    opacity: 0%;
+    animation-fill-mode: both;
+    
+}
+#boxs-1{
+    animation-delay: 1.3s;
+}
+#boxs-2{
+    animation-delay: 2s;
+}
+.boxs-1:hover{
+    transition: 1.7s;
+    transform: scaley(1.06);
+}
+img{
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+
+}
+img:hover{
+    transition: 1.7s;
+    transform: scale(1.06);
+}
+
+h6 , .head1 , p{
+    text-align: start;
+}
+.link-read{
+    display: block;
+    text-align: start;
+    color: white;
+    text-decoration: none;
+}
+.head1{
+    color: rgba(233, 233, 142, 0.897);
+}
+h6{
+    color: white;
+}
+@keyframes abood{
+    100%{
+        opacity: 1;
+    }
+}
+@media(max-width: 567px ) 
+{
+    .boxs{
+        width: 100%;   
+    }
+    @keyframes icon {
+        100%{
+            opacity: 1;
+        }
+    }
+    
+}
+@media(max-width: 678px){
+    .link-logo{
+        display: none;
+    }
+
+}
+@media(min-width: 992px){
+    
+}
+i{
+    font-size: 20px;
+    animation-name: icon;
+    animation-duration: 1s;
+    opacity: 0%;
+    color: rgb(10, 245, 225);
+    animation-fill-mode: both;
+    margin-right: 50px;
+    
+}
